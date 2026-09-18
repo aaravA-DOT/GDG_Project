@@ -1,0 +1,26 @@
+{
+  "name": "KrishiBuddy AI (कृषि बडी)",
+  "short_name": "KrishiBuddy",
+  "description": "Interoperable Digital Agriculture Network for Indian Farmers with AI Disease Diagnostics and Satellite Advisories",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#040d0a",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "lang": "hi-IN",
+  "categories": ["agriculture", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

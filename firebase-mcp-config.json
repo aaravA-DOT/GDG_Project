@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server-config.json",
+  "mcpServer": {
+    "name": "krishibuddy-firebase-mcp",
+    "version": "1.0.0",
+    "description": "Firebase MCP Server connector for KrishiBuddy AI interoperable digital agriculture platform",
+    "capabilities": {
+      "auth": {
+        "providers": ["phone-otp", "google.com", "custom-token"],
+        "roles": ["farmer", "admin", "state_official"]
+      },
+      "firestore": {
+        "collections": [
+          "users",
+          "farms",
+          "advisories",
+          "disease_scans",
+          "state_apis"
+        ],
+        "realtimeSync": true,
+        "offlinePersistence": true
+      },
+      "storage": {
+        "buckets": ["krishibuddy-ai.appspot.com"],
+        "paths": ["disease_scans/{farmerId}/{scanId}.jpg"]
+      }
+    },
+    "agristackIntegration": {
+      "standard": "IDEA-v1.2",
+      "farmerRegistrySync": true,
+      "geoJsonPlotBoundaries": true,
+      "stateDataSharingProtocol": "OAuth2-MutualTLS"
+    }
+  }
+}
